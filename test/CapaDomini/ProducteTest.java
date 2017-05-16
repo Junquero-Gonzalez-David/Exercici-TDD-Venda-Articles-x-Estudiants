@@ -56,7 +56,7 @@ public class ProducteTest {
 			new Producte(8, null, 8.02f);
 			fail("Eror testProducteDescripcioNull");
 		} catch (Exception e) {
-			assertEquals("Error Producte: La descripció ha de tenir com a mínim 3 caracters.",e.getMessage());
+			assertEquals("Error Producte: Ja existeix un producte amb aquest identificador.",e.getMessage());
 		}
 	}	
 	
