@@ -10,7 +10,7 @@ public class Producte implements Cloneable{
 	
 	public Producte(int id, String nom, float preu) throws Exception {
 		
-		if (nom == null ) throw new Exception("Error Producte: Ja existeix un producte amb aquest identificador.");
+		if (nom == null ) throw new Exception("Error Producte: La descripció ha de tenir com a mínim 3 caracters.");
 		else if (nom.trim() == "" || nom.length() < 3)
 			throw new Exception("Error Producte: La descripció ha de tenir com a mínim 3 caracters.");
 		else
@@ -61,7 +61,7 @@ public class Producte implements Cloneable{
 	}	
 	public void setNom(String nouNom) throws Exception{
 		if (nouNom == null || nouNom.trim() == "" || nouNom.length() < 3)
-			throw new Exception("Error Producte: Ja existeix un producte amb aquest identificador.");
+			throw new Exception("Error Producte: La descripció ha de tenir com a mínim 3 caracters.");
 		else
 			this.nom = nouNom;
 	}	
